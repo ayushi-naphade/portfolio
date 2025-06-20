@@ -5,3 +5,20 @@
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
 }
+.experience__grid {
+  
+  display: grid;
+  width: auto;
+  grid-gap: 2em;
+}
+
+.certifications__grid {
+  min-width: 450px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+
+

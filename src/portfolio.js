@@ -20,7 +20,8 @@ const about = {
 
   description:
 
-    'Passionate about building responsive, user friendly web applications. ',
+    'Passionate about building engaging, user-centric digital experiences. ',
+  
 
   resume: 'https://example.com',
 
@@ -28,7 +29,7 @@ const about = {
 
     linkedin: 'https://linkedin.com/in/ayushi-naphade-07190415b',
 
-    github: 'https://github.com/ANaphade',
+    github: 'https://github.com/ayushi-naphade',
 
   },
 
@@ -46,9 +47,9 @@ const projects = [
 
     name: 'Open Miner',
 
-    description:
+    description: 
 
-      'Developed a unified AI-powered search tool to aggregate and summarize data from 3+ sources with optional voice output.',
+      'Unified AI-powered search tool using React, Python, and Web Speech API to aggregate and summarize data from 3+ sources, improving research efficiency with optional voice output.',
 
     stack: ['React Ant Design', 'Web Speech API', 'Python', 'SQL'],
 
@@ -62,9 +63,9 @@ const projects = [
 
     description:
 
-      'Developed an application to analyze the security holdings, add transactions, view summaries and download reports for the client.',
+      'Web application to analyze the security holdings, add transactions, view summaries and download reports for the client.',
 
-    stack: ['React Ant Design', 'Django Rest Framework, SQLite'],
+    stack: ['React Ant Design', 'Django Rest Framework', 'SQLite'],
 
     sourceCode: 'https://github.com',
 
@@ -78,7 +79,7 @@ const projects = [
 
     description:
 
-      'Developed an admin application for CS Pathshala (ACM India) to conduct computational thinking tests, analyze results and generate student certificates across schools in India.',
+      'Admin application for CS Pathshala (ACM India) to conduct computational thinking tests, analyze results and generate student certificates across 60+ schools in India.',
 
     stack: ['React Material UI', 'Django Rest Framework', 'Metabase', 'SQL'],
 
@@ -92,7 +93,7 @@ const projects = [
 
     description:
 
-      'Developed an alpha version of an Android app for CSR event Management which facilitated users to view CSR events, register for them and provide feedback.',
+      'Android app for CSR event Management which facilitates users to view CSR events, register for them based on their interests and provide feedback.',
 
     stack: ['Android', 'Firebase'],
 
@@ -106,19 +107,15 @@ const projects = [
 
  
 
-const certifications = [
-
-  // projects can be added an removed
-
-  // if there are no projects, Projects section won't show up
-
- 
+const certificates = [
 
   {
 
-    name: 'AI-900 Microsoft AI Fundamentals',
+    name: 'AI-900: Microsoft AI Fundamentals',
 
     date: 'Oct 2024',
+
+    img: 'ai900'
 
   },
 
@@ -128,51 +125,19 @@ const certifications = [
 
     date: 'Aug 2024',
 
+    img: 'meta'
  
 
   },
 
   {
 
-    name: 'AZ-900 Microsoft Azure Fundamentals',
+    name: 'AZ-900: Microsoft Azure Fundamentals',
 
     date: 'Mar 2021',
 
+    img: 'az900'
   },
-
-]
-
- 
-
-const experience = [{
-
-  name: 'Authorized Officer | UBS Business Solutions | Pune',
-
-  date:'Feb 2023 - Present',
-
-  description: []
-
-},
-
-{
-
-  name: 'Software Engineer | UBS Business Solutions | Pune',
-
-  date:'Aug 2020 - Jan 2023',
-
-  description: []
-
-},
-
-{
-
-  name: 'Intern | UBS Business Solutions | Pune',
-
-  date:'May 2019 - Jul 2019',
-
-  description: []
-
-},
 
 ]
 
@@ -236,7 +201,56 @@ const skills = [
 
 ]
 
- 
+
+const experience = [{
+
+  name: 'Authorized Officer',
+
+  firm: 'UBS Business Solutions',
+
+  location: 'Pune',
+
+  date:'Feb 2023 - Present',
+
+  description: ['Refactored 35+ UI components using React Hooks, Ag Grid, and Redux for improved performance, scalability, and maintainability.',
+    'Enhanced frontend performance by refactoring code, applying memoization, and optimizing state updates.',
+  'Contributed to UI architecture decisions and planning actively ensuring scalability and modularity.',
+'Migrated on-prem Spring Boot microservices to Azure Kubernetes for better orchestration, developed 4+ Grafana dashboards to track service performance and availability.',
+'Led end-to-end delivery of 5+ product artifacts, overseeing change management, CI/CD-based deployments, and Agile ceremonies such as sprint planning and retrospectives using GitLab and JIRA.']
+
+},
+
+{
+
+  name: 'Software Engineer',
+  firm: 'UBS Business Solutions',
+
+  location: 'Pune',
+
+  date:'Aug 2020 - Jan 2023',
+
+  description: ['Developed responsive, component based user interfaces using React.js for a critical regulatory reporting application used for the supervision of investment activities serving 6000+ users across APAC, EMEA, AMER.',
+    'Designed and developed key dashboards using ReactJS and Redux to facilitate the creation, review, and management of 250+ supervisory procedures and 220+ regulatory compliance documents.',
+  'Developed and integrated Spring Boot REST APIs with React components while collaborating with UX designers to deliver pixel-perfect interfaces based on Figma designs.',
+'Ensured high-quality software releases through testing, code linting, optimized bundling, and version control best practices.']
+
+},
+
+{
+
+  name: 'Software Intern',
+  firm: 'UBS Business Solutions',
+
+  location: 'Pune',
+
+  date:'May 2019 - Jul 2019',
+
+  description: ['Developed features of a web application by using HTML5, Javascript and CSS.','Contributed to code reviews, retrospectives, and debugging sessions while enhancing code quality through industry best practices.']
+
+},
+
+]
+
 
 const contact = {
 
@@ -252,4 +266,4 @@ const contact = {
 
  
 
-export { header, about, projects, skills, contact }
+export { header, about, projects, skills, contact, experience, certificates }

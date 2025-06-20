@@ -8,7 +8,7 @@ const Footer = () => (
 
     <a
 
-      href='https://github.com/rjshkhr/cleanfolio'
+      href='https://github.com/ayushi-naphade'
 
       className='link footer__link'
 

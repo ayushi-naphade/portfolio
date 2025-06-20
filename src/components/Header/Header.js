@@ -3,6 +3,7 @@ import { header } from '../../portfolio'
 import Navbar from '../Navbar/Navbar'
 
 import './Header.css'
+import photo from '../../assets/photo.jpeg'
 
  
 
@@ -20,16 +21,16 @@ const Header = () => {
 
         {homepage ? (
 
-          <a href={homepage} className='link'>
-
-            {title}
+          <a  href={homepage} className='link'>
+{title}
+            {/* <img style={{borderRadius: '50%'}}width="60" height ="60" alt='myphoto' src={photo} /> */}
 
           </a>
 
         ) : (
 
-          title
-
+          /* <img width="60" style={{borderRadius: '50%'}}height ="60" alt='myphoto'src={photo} /> */
+        title
         )}
 
       </h3>

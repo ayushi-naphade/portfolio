@@ -10,3 +10,7 @@
 .skills__list-item {
   margin: 0.5em;
 }
+
+.canvasjs-chart-credit {
+  font-size: 0px !important;
+}

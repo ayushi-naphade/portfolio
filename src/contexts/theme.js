@@ -18,7 +18,7 @@ const ThemeProvider = ({ children }) => {
 
     const darkMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
 
-    setThemeName(darkMediaQuery.matches ? 'dark' : 'light')
+    setThemeName(darkMediaQuery.matches ? 'light' : 'dark')
 
     darkMediaQuery.addEventListener('change', (e) => {
 

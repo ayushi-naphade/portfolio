@@ -11,7 +11,8 @@
 }
 
 .project__description {
-  margin-top: 1em;
+  margin-top: 1.5em;
+  font-size: 0.9em;
 }
 
 .project__stack {
@@ -28,6 +29,20 @@
   color: var(--clr-fg-alt);
 }
 
+.tech__stack-item {
+  margin: 0.5em;
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: var(--clr-fg-alt);
+  height: fit-content;
+  width: fit-content;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 30px;
+  border-width: 0.1px;
+  border-style: solid;
+
+}
 .project .link--icon {
   margin-left: 0.5em;
 }

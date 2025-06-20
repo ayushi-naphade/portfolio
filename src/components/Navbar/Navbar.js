@@ -10,7 +10,7 @@ import CloseIcon from '@material-ui/icons/Close'
 
 import { ThemeContext } from '../../contexts/theme'
 
-import { projects, skills, contact } from '../../portfolio'
+import { projects, skills, contact, experience, certificates } from '../../portfolio'
 
 import './Navbar.css'
 
@@ -40,13 +40,13 @@ const Navbar = () => {
 
       >
 
-          {skills.length ? (
+          {experience.length ? (
 
           <li className='nav__list-item'>
 
             <a
 
-              href='#skills'
+              href='#experience'
 
               onClick={toggleNavList}
 
@@ -108,13 +108,13 @@ const Navbar = () => {
 
         ) : null}
 
-  {skills.length ? (
+  {certificates.length ? (
 
           <li className='nav__list-item'>
 
             <a
 
-              href='#skills'
+              href='#certifications'
 
               onClick={toggleNavList}
 
@@ -162,13 +162,14 @@ const Navbar = () => {
 
         onClick={toggleTheme}
 
+        style={{backgroundColor: 'inherit'}}
         className='btn btn--icon nav__theme'
 
         aria-label='toggle theme'
 
       >
 
-        {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+        {themeName === 'dark' ? <WbSunnyRoundedIcon/> : <Brightness2Icon />}
 
       </button>
 

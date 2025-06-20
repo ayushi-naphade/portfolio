@@ -1,3 +1,4 @@
+import uniqid from 'uniqid'
 import { contact } from '../../portfolio'
 
 import './Contact.css'
@@ -9,22 +10,46 @@ const Contact = () => {
   if (!contact.email) return null
 
  
+const openWithMail=(email)=>{
+   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+  window.open(gmailUrl, '_blank');
+}
 
   return (
 
     <section className='section contact center' id='contact'>
 
-      <h2 className='section__title'>Contact</h2>
+      <h2 className='section__title'>Let&apos;s connect!</h2>
 
-      <a href={`mailto:${contact.email}`}>
+      <div style={{textAlign:'center'}}>
 
-        <span type='button' className='btn btn--outline'>
+      <ul className='skills__list'>
 
-          Email me
+       
 
-        </span>
+          <li key={uniqid()} className='skills__list-item btn btn--plain'>
 
-      </a>
+            <button
+
+        type='button'
+
+        onClick={()=>openWithMail('ayushinaphade@gmail.com')}
+
+        className='btn btn--icon nav__theme'
+        style={{backgroundColor: 'inherit'}}
+        aria-label='toggle theme'
+
+      >ayushinaphade@gmail.com</button>
+
+          </li>
+
+      
+
+       
+
+      </ul>
+
+      </div>
 
     </section>
 

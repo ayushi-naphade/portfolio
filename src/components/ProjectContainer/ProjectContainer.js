@@ -1,65 +1,48 @@
+import { useContext } from 'react'
 import uniqid from 'uniqid'
 
-import GitHubIcon from '@material-ui/icons/GitHub'
-
 import './ProjectContainer.css'
+import { ThemeContext } from '../../contexts/theme'
 
- 
+const ProjectContainer = ({ project }) => {
+  
+    const [{ themeName }] = useContext(ThemeContext); 
+    const color=themeName === 'light' ?  '#5dade2' : 'steelblue';
+  return (
 
-const ProjectContainer = ({ project }) => (
+  <div className='project' >
 
-  <div className='project'>
+    <h4>{project.name}</h4>
 
-    <h3>{project.name}</h3>
 
- 
 
     <p className='project__description'>{project.description}</p>
+<br/>
 
-    {project.stack && (
 
+
+         
       <ul className='project__stack'>
-
         {project.stack.map((item) => (
 
-          <li key={uniqid()} className='project__stack-item'>
+          
 
-            {item}
+          <li key={uniqid()} className='tech__stack-item' style={{borderColor: color, color}}>
+
+           {item}
 
           </li>
 
         ))}
-
       </ul>
 
-    )}
-
- 
-
-    {project.sourceCode && (
-
-      <a
-
-        href={project.sourceCode}
-
-        aria-label='source code'
-
-        className='link link--icon'
-
-      >
-
-        <GitHubIcon />
-
-      </a>
-
-    )}
 
  
 
   </div>
 
 )
-
+}
  
 
 export default ProjectContainer

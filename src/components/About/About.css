@@ -1,14 +1,19 @@
-.about {
-  flex-direction: column;
-  margin-top: 3em;
-  /* height:100vh; */
-}
+
 
 .about__name {
   color: var(--clr-primary);
   
 }
   
+.typewriter {
+  
+  font-weight: 600;
+  font-size: 30px
+}
+.cursor {
+display: none;
+ 
+}
 .type {
   display:inline-flex;
 }
@@ -31,11 +36,13 @@
 
 .about__role {
   margin-top: 1.2em;
+  
 }
 
 .about__desc {
   font-size: 1rem;
-  max-width: 600px;
+
+  /* max-width: 600px; */
 }
 
 .about__desc,

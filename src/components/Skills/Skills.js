@@ -1,15 +1,15 @@
 import uniqid from 'uniqid'
-
+import {useEffect, useRef} from 'react'
 import { skills } from '../../portfolio'
 
 import './Skills.css'
+import ChartComponent from './ChartComponent'
 
  
 
 const Skills = () => {
-
   if (!skills.length) return null
-
+  
  
 
   const backend = [
@@ -66,17 +66,19 @@ const Skills = () => {
 
   ]
 
- 
 
+  
+  
   return (
 
     <section className='section skills' id='skills'>
 
       <h2 className='section__title'>Skills</h2>
 
-   
 
-      <div style={{textAlign:'center'}}>
+  
+<ChartComponent />
+      {/* <div style={{textAlign:'center'}}>
 
       <ul className='skills__list'>
 
@@ -94,7 +96,7 @@ const Skills = () => {
 
       </ul>
 
-      <div>
+      <div> */}
 
       <br/>
 
@@ -174,9 +176,9 @@ const Skills = () => {
 
       </div> */}
 
-      </div>
+      {/* </div> */}
 
-      </div>
+      {/* </div> */}
 
     </section>
 

@@ -25,7 +25,7 @@ if(date === 'Feb 2023 - Present') {
   return (
     <div style={{marginBottom: '0.3em'}} className="accordion-item">
       <button style={{ borderRadius: '2px',width: '100%', backgroundColor: themeName === 'dark' ? '#23283e': '#fcfcfc'}} type='button' className="accordion-title" onClick={() => {setIsActive(!isActive); setCurrActive(name);}}>
-        <span style={{display: 'flex'}}><p style={{fontWeight: '550'}}>{name} &middot; {firm} &middot; {location} &middot; </p> <span style={{fontSize: '14px', marginTop: '2px', fontStyle:'italic'}}>&nbsp;{date}</span></span>
+        <span style={{display: 'flex'}}><p style={{fontWeight: '550', textAlign: 'left', fontSize: '16px', marginRight: '10px'}}>{name} &middot; {firm} &middot; {location} &middot; <i style={{ fontWeight: '100', fontSize: '14px'}}>&nbsp;{date}</i></p></span>
         <div>{isActive ? '-' : '+'}</div>
       </button>
       {isActive && <div style={{ paddingLeft: '2.5em', borderRadius: '2px',width: '100%', backgroundColor: themeName === 'dark' ? '#23283e': '#fcfcfc'}} className="accordion-content">

@@ -16,41 +16,41 @@ const About = () => {
   
   return (
 
-    <div className='about center' style={{display: 'flex'}}>
+    <div className='about center'>
+<div className='flex-container'>
+      <div className='flex-item-left'>
+          {name && (
 
-<div>
-      {name && (
+            <h1>
 
-        <h1>
+              <span className='about__name'><span><span>{name}</span></span></span>
 
-          <span className='about__name'><span><span>{name}</span></span></span>
+            </h1>
 
-        </h1>
-
-      )}
+          )}
       
       
       
 
-<div style={{marginTop: '1.5em'}}>
-  
-<p style={{display: 'flex', fontSize: '30px', fontWeight: 600}}>A &nbsp;<Typewriter
-  options={{
-    strings: ['Software Engineer', 'React Developer', 'Fullstack Developer','UI Enthusiast'],
-    autoStart: true,
-    loop: true,
-    delay: 60,
-    deleteSpeed: 40,
-    wrapperClassName: 'typewriter',
-    cursorClassName: 'cursor'
-  }}
-/></p>
+        <div style={{marginTop: '1.5em'}}>
 
-</div>
+        <p style={{display: 'flex', fontSize: '30px', fontWeight: 600}}>A &nbsp;<Typewriter
+        options={{
+          strings: ['Software Engineer', 'React Developer', 'Fullstack Developer','UI Enthusiast'],
+          autoStart: true,
+          loop: true,
+          delay: 60,
+          deleteSpeed: 40,
+          wrapperClassName: 'typewriter',
+          cursorClassName: 'cursor'
+        }}
+        /></p>
+
+        </div>
     
       <br/>
 
-      <p className='about__desc' style={{  marginTop: '1em'}}>{description && description}</p>
+      <p className='about__desc' style={{  marginTop: '1em', marginRight: '7em'}}>{description && description}</p>
 
  
 
@@ -121,9 +121,11 @@ const About = () => {
         )}
 
       </div>
-      </div>
-<div > <img src={image} alt="developer"/></div>
     </div>
+    
+    <div className='flex-item-right'> <img src={image} alt="developer"/></div>
+    </div>
+  </div>
 
   )
 

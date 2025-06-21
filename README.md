@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my Portfolio with React.
+This is my Portfolio developed React.
 
 ## Preview
 

@@ -13,7 +13,7 @@
 }
 
 .certifications__grid {
-  min-width: 450px;
+  min-width: auto;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));

@@ -25,6 +25,8 @@
     width: 100%;
     height: 100%;
     z-index: 2;
+       opacity: 0.95;
+    background-color: #cdcdff;
   }
 
   .nav__list-item {
@@ -35,5 +37,6 @@
     display: flex;
     z-index: 2;
     margin-left: 0.8em;
+    border-radius: 2px;
   }
 }

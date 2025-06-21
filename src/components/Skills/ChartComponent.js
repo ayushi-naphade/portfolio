@@ -23,26 +23,32 @@ setKey(Math.random())
     toolTip: {
 			content: "{name}",
         },
-indexLabel: "{name}",
+    indexLabel: "{name}",
         indexLabelFontColor: themeName === 'dark' ? '#cdcdff': '#444',
-    innerRadius: "75%",
-   		
+    innerRadius: "80%",
+   	showInLegend: true,
     legendMarkerType: "square",
+    legend:  {
+    fontColor:  '#cdcdff',
+    fontSize: 13,
+    itemTextFormatter: (e) =>
+      `${e.dataPoint.name}`,
+  },
     startAngle: 180,
     cursor: "pointer",
     explodeOnClick: false,
     dataPoints: [
         { y: 30, name: "Frontend", color: "#85c1e9", toolTipContent: 'Frontend' },
-        { y: 30, name: "UI Libraries & Visualization", color: "#858fe9", toolTipContent: 'UI Libraries & Visualization' },
+        { y: 30, name: "UI Libraries/Visualization", color: "#858fe9", toolTipContent: 'UI Libraries/Visualization' },
         { y: 20, name: "Backend", color: "#ad85e9", toolTipContent: 'Backend' },
     { y: 10, name: "DevOps & Tools", color: "#df85e9" , toolTipContent: 'DevOps & Tools' },
-        { y: 10, name: "Testing, Processes & Others", color: "#e985c1", toolTipContent: 'Testing, Processes & Others' }
+        { y: 10, name: "Miscellaneous", color: "#e985c1", toolTipContent: 'Miscellaneous' }
       ],
   }],
 "Frontend": [{
     type: "doughnut",
     name: "Frontend",
-    innerRadius: "75%",
+    innerRadius: "80%",
     toolTip: {
 			content: "{name}",
         },
@@ -54,7 +60,7 @@ indexLabel: "{name}",
       `${e.dataPoint.name}`,
   },
     indexLabelFontColor: themeName === 'dark' ? '#cdcdff': '#444',
-   
+   	showInLegend: false,
     legendMarkerType: "square",
     startAngle: 180,
     cursor: "pointer",
@@ -71,7 +77,7 @@ indexLabel: "{name}",
   "Backend": [{
     type: "doughnut",
     name: "Backend",
-    innerRadius: "75%",
+    innerRadius: "80%",
     toolTip: {
 			content: "{name}"
         },
@@ -82,6 +88,7 @@ indexLabel: "{name}",
     legendMarkerType: "square",
     startAngle: 180,
     cursor: "pointer",
+      	showInLegend: false,
     explodeOnClick: false,
     dataPoints: [
       { y: 25, name: "Java", color: "#a87ee7", toolTipContent: "Java" },
@@ -91,10 +98,10 @@ indexLabel: "{name}",
       { y: 10, name: "SQL", color: "#d3bef3", toolTipContent: 'SQL' }
     ]
   }],
-   "UI Libraries & Visualization": [{
+   "UI Libraries/Visualization": [{
     type: "doughnut",
-    name: "UI Libraries & Visualization",
-    innerRadius: "75%",
+    name: "UI Libraries/Visualization",
+    innerRadius: "80%",
    
     toolTip: {
 			content: "{name}"
@@ -104,6 +111,7 @@ indexLabel: "{name}",
         indexLabelFontColor: themeName === 'dark' ? '#cdcdff': '#444',
     legendMarkerType: "square",
     startAngle: 180,
+      	showInLegend: false,
     cursor: "pointer",
     explodeOnClick: false,
     dataPoints: [
@@ -117,7 +125,7 @@ indexLabel: "{name}",
   "DevOps & Tools": [{
     type: "doughnut",
     name: "DevOps & Tools",
-    innerRadius: "75%",
+    innerRadius: "80%",
   
     toolTip: {
 			content: "{name}"
@@ -127,6 +135,7 @@ indexLabel: "{name}",
         indexLabelFontColor: themeName === 'dark' ? '#cdcdff': '#444',
     legendMarkerType: "square",
     startAngle: 180,
+      	showInLegend: false,
     cursor: "pointer",
     explodeOnClick: false,
     dataPoints: [
@@ -141,21 +150,26 @@ indexLabel: "{name}",
       { y: 5, name: "Firebase", color: "#f9e9fb", toolTipContent: 'Firebase' },
     ]
   }],
-  "Testing, Processes & Others": [{
+  "Miscellaneous": [{
     type: "doughnut",
-    name: "Testing, Processes & Others",
-    innerRadius: "75%",
+    name: "Miscellaneous",
+    innerRadius: "80%",
   
     legendMarkerType: "square",
     startAngle: 180,
+    showInLegend: false,
     toolTip: {
 			content: "{name}",
 
         },
-        indexLabel: "{name}",
-        indexLabelFontColor: themeName === 'dark' ? '#cdcdff': '#444',
+      indexLabel: "{name}",
+      indexLabelFontColor: themeName === 'dark' ? '#cdcdff': '#444',
     cursor: "pointer",
     explodeOnClick: false,
+    legend:  {
+    fontColor: '#cdcdff',
+    
+  },
     dataPoints: [
        { y: 20, name: "DevTools", color: "#df53a7", toolTipContent: 'DevTools' },
        { y: 15, name: "ESLint", color: "#e368b2", toolTipContent: 'ESLint' },
@@ -191,9 +205,11 @@ animationDuration: 1000,
     fontColor: "white",
     padding: 5
   }] : [],
+   legendMarkerType: "square",
+   showInLegend: true,
   legend: showLegend ? {
-    fontColor: '#cdcdff',
-    fontSize: 12,
+    fontColor: themeName === 'dark'? '#cdcdff': '#444',
+    fontSize: 13,
     itemTextFormatter: (e) =>
       `${e.dataPoint.name}`,
   } : undefined,

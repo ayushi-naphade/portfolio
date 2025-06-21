@@ -208,7 +208,7 @@ animationDuration: 1000,
    legendMarkerType: "square",
    showInLegend: true,
   legend: showLegend ? {
-    fontColor: themeName === 'dark'? '#cdcdff': '#444',
+    fontColor: themeName === 'dark'? '#cdcdff': '#d3d3d3',
     fontSize: 13,
     itemTextFormatter: (e) =>
       `${e.dataPoint.name}`,

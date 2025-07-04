@@ -9,7 +9,7 @@ const Footer = () => (
     <p
 
 
-      className='link footer__link'
+      className='footer__link'
 
     >
 

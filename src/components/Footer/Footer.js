@@ -6,9 +6,8 @@ const Footer = () => (
 
   <footer className='footer'>
 
-    <a
+    <p
 
-      href='https://github.com/ayushi-naphade'
 
       className='link footer__link'
 
@@ -16,7 +15,7 @@ const Footer = () => (
 
       &copy; Developed by Ayushi Naphade
 
-    </a>
+    </p>
 
   </footer>
 

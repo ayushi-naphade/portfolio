@@ -60,7 +60,7 @@ const About = () => {
 
         {resume && (
 
-          <a href={ResumeDoc} download="ResumeDoc.pdf" rel="noopener noreferrer">
+          <a href={ResumeDoc} target="_blank" rel="noopener noreferrer">
 
             <span type='button' className='btn btn--outline'>
 

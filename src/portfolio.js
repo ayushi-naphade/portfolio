@@ -212,7 +212,7 @@ const experience = [{
 
   date:'Feb 2023 - Present',
 
-  description: ['Refactored 35+ UI components using React Hooks, Ag Grid, and Redux for improved performance, scalability, and maintainability.',
+  description: ['Designed and implemented reusable UI components using React Hooks, Ag Grid, and Redux for improved performance, scalability, and maintainability.',
     'Enhanced frontend performance by refactoring code, applying memoization, and optimizing state updates.',
   'Contributed to UI architecture decisions and planning actively ensuring scalability and modularity.',
 'Migrated on-prem Spring Boot microservices to Azure Kubernetes for better orchestration, developed 4+ Grafana dashboards to track service performance and availability.',

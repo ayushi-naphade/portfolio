@@ -13,7 +13,7 @@ const Footer = () => (
 
     >
 
-      &copy; Developed by Ayushi Naphade
+      &copy; 2025 Ayushi Naphade. All Rights Reserved.
 
     </p>
 

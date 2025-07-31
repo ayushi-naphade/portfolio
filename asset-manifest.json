@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e6cc7e6e.chunk.css",
-    "main.js": "/portfolio/static/js/main.c90d2f4f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c90d2f4f.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.dff9032c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dff9032c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/js/2.9b50b972.chunk.js": "/portfolio/static/js/2.9b50b972.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/portfolio/index.html",
     "static/css/main.e6cc7e6e.chunk.css.map": "/portfolio/static/css/main.e6cc7e6e.chunk.css.map",
     "static/js/2.9b50b972.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9b50b972.chunk.js.LICENSE.txt",
-    "static/media/ResumeDoc.88f4ec35.pdf": "/portfolio/static/media/ResumeDoc.88f4ec35.pdf",
+    "static/media/ResumeDoc.1f62fc3e.pdf": "/portfolio/static/media/ResumeDoc.1f62fc3e.pdf",
     "static/media/ai900.ef3e2e51.png": "/portfolio/static/media/ai900.ef3e2e51.png",
     "static/media/az900.108013c4.png": "/portfolio/static/media/az900.108013c4.png",
     "static/media/bebras1.e4128185.png": "/portfolio/static/media/bebras1.e4128185.png",
@@ -41,6 +41,6 @@
     "static/js/runtime-main.0bf68c44.js",
     "static/js/2.9b50b972.chunk.js",
     "static/css/main.e6cc7e6e.chunk.css",
-    "static/js/main.c90d2f4f.chunk.js"
+    "static/js/main.dff9032c.chunk.js"
   ]
 }

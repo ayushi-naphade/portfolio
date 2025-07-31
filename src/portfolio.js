@@ -212,11 +212,11 @@ const experience = [{
 
   date:'Feb 2023 - Present',
 
-  description: ['Designed and implemented reusable UI components using React Hooks, Ag Grid, and Redux for improved performance, scalability, and maintainability.',
-    'Enhanced frontend performance by refactoring code, applying memoization, and optimizing state updates.',
-  'Contributed to UI architecture decisions and planning actively ensuring scalability and modularity.',
-'Migrated on-prem Spring Boot microservices to Azure Kubernetes for better orchestration, developed 4+ Grafana dashboards to track service performance and availability.',
-'Led end-to-end delivery of 5+ product artifacts, overseeing change management, CI/CD-based deployments, and Agile ceremonies such as sprint planning and retrospectives using GitLab and JIRA.']
+  description: ['Designed and developed reusable UI components using React Hooks, Redux, and AG Grid, reducing duplicate code and improving rendering performance across critical workflows',
+    'Optimized performance through virtualized components, applying memoization and state management improvements.',
+  'Actively shaped UI architecture decisions to ensure modularity and maintainability.',
+'Spearheaded migration of Spring Boot microservices to Azure Kubernetes, enhancing scalability and orchestration; built 4+ Grafana dashboards for real-time performance monitoring.',
+'Led end-to-end delivery of 5+ product artifacts, overseeing change management,managing CI/CD pipelines, and Agile ceremonies such as daily standups (scrums), sprint planning and retrospectives using GitLab and JIRA.']
 
 },
 
@@ -229,10 +229,10 @@ const experience = [{
 
   date:'Aug 2020 - Jan 2023',
 
-  description: ['Developed responsive, component based user interfaces using React.js for a critical regulatory reporting application used for the supervision of investment activities serving 6000+ users across APAC, EMEA, AMER.',
-    'Designed and developed key dashboards using ReactJS and Redux to facilitate the creation, review, and management of 250+ supervisory procedures and 220+ regulatory compliance documents.',
-  'Developed and integrated Spring Boot REST APIs with React components while collaborating with UX designers to deliver pixel-perfect interfaces based on Figma designs.',
-'Ensured high-quality software releases through testing, code linting, optimized bundling, and version control best practices.']
+  description: ['Developed responsive, enterprise-grade user interfaces in React.js for a critical regulatory reporting application used for the supervision of investment activities serving 6000+ users across APAC, EMEA, AMER.',
+    'Designed and developed key dashboards using ReactJS and Redux to facilitate the creation, review, and management of over 450+ supervisory procedures and 220+ regulatory compliance documents.',
+  'Leveraged microservices architecture to develop and integrate Spring Boot RESTful APIs with React components while delivering high-quality, pixel-perfect experiences in collaboration with design teams using Figma.',
+'Ensured high-quality deployments through code linting, optimized bundling, testing and version control best practices.']
 
 },
 
